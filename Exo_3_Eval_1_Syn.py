@@ -39,6 +39,7 @@ def calculerDuree():
 while continuer != "q":  
     afficherMenu()
     choix = input()
+    
     if choix == "1":
         print(f"Stockage: {calculerStockage()}")
         
