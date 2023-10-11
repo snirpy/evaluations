@@ -3,9 +3,9 @@ ips = 25
 
 def afficherMenu():
     print("\nQuel calcul souhaitez vous réaliser ?")
-    print("\n1=Espace Stockage ")
-    print("2=Durée Enregistrement ")
-    print("q=Pour quitter\n\n>> ",end ="")
+    print("\n1: Espace Stockage ")
+    print("2: Durée Enregistrement ")
+    print("q: Pour quitter\n\n>> ",end ="")
 
 def saisir (message):
     valeur_int = 0
@@ -43,11 +43,12 @@ while continuer != "q":
         print(f"Stockage: {calculerStockage()}")
         
     elif choix == "2":
-        
         print(f"Durée: {calculerDuree()}")
+        
     elif choix == "q":
         print("Vous venez de quitter le programme!")
         continuer = "q"
+        
     else:
         print("Je n'ai pas compris votre choix! Veuillez recommencer")
 
